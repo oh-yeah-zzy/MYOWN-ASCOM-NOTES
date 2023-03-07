@@ -49,7 +49,7 @@
 在笔者的调试过程中，遇到的情况更为复杂，笔者在调试之初所遇到的情况是第一种情况，但是出现了设备并不提供该电脑平台的ASCOM驱动的情况，故不得已之下笔者采用了第二种方案。
 
 笔者的整体环境为一台windows电脑，一台linux电脑，望远镜与相机等设备提供了windows下的ASCOM驱动支持，但是并没有提供linux下的ASCOM驱动支持，故笔者在调试时采用了ASCOM Remote与ASCOM Alpyca的方案来进行调试，即将望远镜、相机等设备均接至windows设备下，控制程序部署于linux上，通过ASCOM Remote对请求进行转换，进一步实现对设备的控制，同时这种架构方式也是ASCOM官方为我们介绍的“Alpaca clients using COM drivers hosted on a Windows PC”架构，其整体架构图如下，图源ASCOM官方文档：
-![[img/Pasted image 20230307153440.png]]
+![](./img/arch.jpg)
 
 即在linux下的Alpaca Clients通过Alpaca API将信息传递给运行在windows平台上的ASCOM Remote Server，Remote Server解析消息后将信息传递给COM Drivers进行控制。
 

@@ -54,7 +54,7 @@
 即在linux下的Alpaca Clients通过Alpaca API将信息传递给运行在windows平台上的ASCOM Remote Server，Remote Server解析消息后将信息传递给COM Drivers进行控制。
 
 <br>
-接下来就是实际写代码这一步，其实开始到了上手写代码的时候反而没有那么难了，ASCOM的官方文档给出了十分完善的指南[alpyca官方文档](https://ascom-standards.org/alpyca/)。我们所要撰写的部分，其实仅仅只有Alpaca Clients部分的代码，其他部分的代码均由ASCOM Platform与各仪器厂商帮我们完成了，我们仅需按照ASCOM官方文档的指南，首先运行：
+接下来就是实际写代码这一步，其实开始到了上手写代码的时候反而没有那么难了，ASCOM的官方文档给出了十分完善的指南[alpyca官方文档](https://ascom-standards.org/alpyca/) 我们所要撰写的部分，其实仅仅只有Alpaca Clients部分的代码，其他部分的代码均由ASCOM Platform与各仪器厂商帮我们完成了，我们仅需按照ASCOM官方文档的指南，首先运行：
 ```shell
 pip install alpyca
 ```
